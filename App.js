@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Statistics from './screens/Statistics';
 import Game from './screens/Game';
 import ResultModal from './screens/ResultModal';
-const URL = 'http://www.whatyouwant.somee.com/api/Games/GamesList';
+const URL = 'http://www.wearetheworld.somee.com/api/Games/GamesList';
 
 // npm install  @react-navigation/native @react-navigation/native-stack
 

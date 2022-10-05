@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Text, View, LogBox, TouchableOpacity } from 'react-native';
 import Board from './Board';
 import { mainApp } from '../styles/styles';
-const URL = 'http://www.whatyouwant.somee.com/api/Games/SetGameResults';
+const URL = 'http://www.wearetheworld.somee.com/api/Games/SetGameResults';
 
 LogBox.ignoreAllLogs();
 
