@@ -78,7 +78,7 @@ export default function Game({ navigation }) {
     }
   }
   const postResulttoDB = async () => {
-    //let gameData =;
+    let gameData = { user1: gameResult.p1, user2: gameResult.p2 };
     try {
       console.log('starting postResulttoDB function');
       const fetchResponse = await fetch(URL, {
@@ -87,10 +87,7 @@ export default function Game({ navigation }) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          user1: gameResult.p1,
-          user2: gameResult.p2,
-        }),
+        body: JSON.stringify({ gameData }),
       });
       const data = await fetchResponse.json();
       return data;
